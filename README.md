@@ -1,21 +1,17 @@
-# Parallelized RSA Algorithm
+RSA Encryption and Decryption Project
+This project implements RSA encryption and decryption using C++ with GMP and OpenMP for efficient handling of large numbers and parallel processing. It allows generating large prime numbers, creating public and private keys, and encrypting and decrypting messages provided by the user.
 
-This is an analysis with performance evaluation using OpenMP library in High Performance Computing Environment at Tennessee Tech University. The work has been published at the [2019 22nd International Conference of Computer and Information Technology (ICCIT)](http://iccit.org.bd/2019/).
-
-## Citing this work
-If you use our implementation for academic research, you are highly encouraged to cite the following [paper](https://ahsanayub.github.io/assets/paper/PID6235867.pdf):
-
-
-```
-@inproceedings{ayub2019parallelized,
-  title={Parallelized RSA Algorithm: An Analysis with Performance Evaluation using OpenMP Library in High Performance Computing Environment},
-  author={Ayub, Md Ahsan and Onik, Zishan Ahmed and Smith, Steven},
-  booktitle={2019 22th International Conference of Computer and Information Technology (ICCIT)},
-  pages={1--6},
-  year={2019},
-  organization={IEEE}
-}
-```
-
-
-The work is funded by [Cybersecurity Education, Research & Outreach Center (CEROC)](https://www.tntech.edu/ceroc/) at Tennessee Tech University
+Features
+Modular Exponentiation: Calculates powers modulo a large number efficiently.
+Miller-Rabin Primality Test: Verifies if large numbers are prime.
+Prime Generation: Generates large prime numbers with specified bit lengths.
+Extended Euclidean Algorithm: Calculates modular inverses for key generation.
+OpenMP: Utilizes parallel processing to optimize prime checking.
+GMP Library: Handles large integer operations required for RSA encryption.
+Requirements
+C++ compiler
+GMP Library
+OpenMP
+gmpxx.h for C++ interface to GMP
+Setup
+Clone the repository:
